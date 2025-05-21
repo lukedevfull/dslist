@@ -14,8 +14,13 @@ public class GameService {
     @Autowired
     private GameRepository gameRepository;
 
-    public List<Game> findAll(){
+    public List<GameMinimalDTO> findAll(){
+
         var result = gameRepository.findAll();
-        return result;
+
+        return result
+                .stream()
+                .map(x -> new GameMinimalDTO(x))
+                .toList();
     }
 }
