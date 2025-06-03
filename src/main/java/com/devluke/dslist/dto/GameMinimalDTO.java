@@ -2,7 +2,7 @@ package com.devluke.dslist.dto;
 
 import com.devluke.dslist.entities.Game;
 import com.devluke.dslist.projections.GameMinProjection;
-import org.springframework.beans.BeanUtils;
+
 
 public class GameMinimalDTO {
 
