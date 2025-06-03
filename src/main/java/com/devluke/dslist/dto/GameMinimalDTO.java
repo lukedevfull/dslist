@@ -1,7 +1,8 @@
 package com.devluke.dslist.dto;
 
 import com.devluke.dslist.entities.Game;
-import jakarta.persistence.Column;
+import com.devluke.dslist.projections.GameMinProjection;
+import org.springframework.beans.BeanUtils;
 
 public class GameMinimalDTO {
 
@@ -15,11 +16,19 @@ public class GameMinimalDTO {
     }
 
     public GameMinimalDTO(Game entity) {
-        id = entity.getId();
-        title = entity.getTitle();
-        year = entity.getYear();
-        imgUrl = entity.getImgUrl();
-        shortDescription = entity.getShortDescription();
+        this.id = entity.getId();
+        this.title = entity.getTitle();
+        this.year = entity.getYear();
+        this.imgUrl = entity.getImgUrl();
+        this.shortDescription = entity.getShortDescription();
+    }
+
+    public GameMinimalDTO(GameMinProjection projection) {
+        this.id = projection.getId();
+        this.title = projection.getTitle();
+        this.year = projection.getYear();
+        this.imgUrl = projection.getImgUrl();
+        this.shortDescription = projection.getShortDescription();
     }
 
     public Long getId() {
