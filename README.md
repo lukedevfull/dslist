@@ -4,13 +4,33 @@ Trata-se de um sistema backend robusto desenvolvido em Java para gerenciamento d
 
 ## Documentação
 <h3>Padrão de Camadas  e Fluxo de Requisições UML</h3>
-![Padrão de Camadas UML](src/resources/images/Dslist-Layers.svg)
+
+![Padrão de Camadas UML](https://raw.githubusercontent.com/lukedevfull/dslist/refs/heads/main/src/resources/images/Dslist-Layers.svg)
 
 <h3>Camadas em Árvore de Componentes</h3>
-![Camadas em Árvore de Componentes](./src/resources/images/Layer-Tree.png) 
+
+![Camadas em Árvore de Componentes](https://raw.githubusercontent.com/lukedevfull/dslist/refs/heads/main/src/resources/images/Layer-Tree.png) 
 
 <h3>Diagrama Geral de Classes do Projeto UML</h3>
-![Diagrama Geral de Classes do Projeto UML](./src/resources/images/Dslist.svg) 
+
+![Diagrama Geral de Classes do Projeto UML](https://raw.githubusercontent.com/lukedevfull/dslist/refs/heads/main/src/resources/images/Dslist.svg) 
+
+## Instalação
+<h4>Clone o repositório</h4>
+
+```
+git clone git@github.com:lukedevfull/dslist.git
+```
+
+<h4>Inicie o Docker (Opcional)</h4>
+
+```
+docker compose up -d
+```
+
+<p>Utilize sua ferramenta REST preferida, como Insomnia ou Postman para as collections</p>
+
+###
 
 ## Tecnologias Utilizadas
 
@@ -19,19 +39,6 @@ Trata-se de um sistema backend robusto desenvolvido em Java para gerenciamento d
     <img src="https://skillicons.dev/icons?i=java,git,github,idea,spring,maven,docker,bash,linux,postgres,postman," />
   </a>
 </p>
-
-## Instalação
-
-<h3>Clone o repositório e execute o docker compose</h3>
-```
-git clone git@github.com:lukedevfull/dslist.git
-```
-
-```
-cd dslist
-docker compose up -d
-```
-
 <h6> Desenvolvido por Lucas Sérgio da Silva</h6>
 
 
