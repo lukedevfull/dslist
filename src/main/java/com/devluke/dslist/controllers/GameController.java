@@ -24,7 +24,7 @@ public class GameController {
         return gameService.findById(gameId);
     }
 
-    @GetMapping
+    @GetMapping(value = "/allGames")
     public List<GameMinimalDTO> findAll(){
         return gameService.findAll();
     }
