@@ -24,7 +24,7 @@ Trata-se de um sistema backend robusto desenvolvido em Java para gerenciamento d
 
 <h3>Clone o repositório e execute o docker compose</h3>
 ```
-git clone https://github.com/lukedevfull/dslist.git
+git clone git@github.com:lukedevfull/dslist.git
 ```
 
 ```
